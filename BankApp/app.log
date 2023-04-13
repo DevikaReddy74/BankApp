@@ -1,0 +1,63 @@
+2023-03-24 18:54:19 [restartedMain] INFO  com.bank.BankAppApplication - Starting BankAppApplication using Java 16.0.2 on LTIN284645 with PID 40372 (C:\Users\2069751\workspace-spring-tool-suite-4-4.12.0.RELEASE\BankApp\target\classes started by 2069751 in C:\Users\2069751\workspace-spring-tool-suite-4-4.12.0.RELEASE\BankApp)
+2023-03-24 18:54:19 [restartedMain] INFO  com.bank.BankAppApplication - The following 1 profile is active: "test"
+2023-03-24 18:54:20 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-24 18:54:20 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2023-03-24 18:54:20 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-03-24 18:54:20 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-24 18:54:20 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-03-24 18:54:20 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-24 18:54:20 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1612 ms
+2023-03-24 18:54:20 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2023-03-24 18:54:20 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2023-03-24 18:54:20 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-03-24 18:54:20 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-24 18:54:20 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-24 18:54:21 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-24 18:54:21 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-24 18:54:21 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-24 18:54:21 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-03-24 18:54:21 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-24 18:54:21 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-24 18:54:21 [restartedMain] INFO  com.bank.BankAppApplication - Started BankAppApplication in 2.973 seconds (JVM running for 3877.079)
+2023-03-24 18:54:21 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   LogFileWebEndpointAutoConfiguration#logFileWebEndpoint matched:
+      - Log File found logging.file.name app.log (LogFileWebEndpointAutoConfiguration.LogFileCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.logging.LogFileWebEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2023-03-24 18:55:19 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-03-24 18:55:19 [Thread-20] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-03-24 18:55:19 [Thread-20] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-24 18:55:19 [Thread-20] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-03-24 18:55:19 [Thread-20] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-03-24 18:55:19 [Thread-20] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2023-03-24 18:55:19 [Thread-20] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
